@@ -3,13 +3,14 @@
 {% block content %}
 
 {% load static %}
-<header class="row bg-black">
-    <div class='col-md-4'>
-    <img src="{% static 'portfolio/perfil.jpg'%}"alt="">
+<h1>Victor Rubia</h1>
+<header class="row bg-black mi-div">
+    <div class='col-md-4 mi-div'>
+    <img src="{% static 'portfolio/perfil.jpg'%}"alt=""class="img-fluid">
 </div>
-<div class='col-md-8 my-auto'>
-    <h1>Je suis Victor Rubia</h1>
-    <h3>développeur Junior Python</h3>
+<div class='col-md-8 my-auto'class="text-fluid">
+    
+    <h3>Développeur Junior Python</h3>
     <p>Programmeur junior très motivé et passionné par le développement
         de logiciels. J'ai une solide connaissance de Python, ainsi que de 
         l'expérience dans le développement d'applications web et des 
@@ -18,7 +19,7 @@
         résultats, avec des compétences en résolution de problèmes et une
         capacité à travailler efficacement en équipe et de manière 
         autonome.</p>
-        <a href="{% static "portfolio/cv_france.pdf" %}" class="btn btn-primary btn-lg rounded-0 my-3"target='_blank'>Télécharger</a>
+        <a href="{% static "portfolio/cv_france.pdf" %}" class="btn btn-primary btn-lg rounded-3 my-3"target='_blank'>Télécharger</a>
 </div>
 </header>
 
@@ -30,7 +31,7 @@
 {% for project in projects %}
 
 <div class="col-md-4 p-4">
-    <div class="card bg-black card-project">
+    <div class="card bg-black card-project mi-div">
         <img src="{{project.image.url}}" alt="{{project.title}}" class="card-img-top"/>
         <div class="card-body">
            <h2>{{project.title}}</h2>
@@ -38,7 +39,7 @@
 
             
             {% if project.url %}
-            <a href="{{project.url}}" class="btn btn-light round-0 btn-sm"target="_blank"></a>
+            <a href="{{project.url}}" class="btn btn-light round-3 btn-sm"target="_blank"></a>
             {% endif %} 
         </div>
     </div>

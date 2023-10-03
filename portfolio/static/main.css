@@ -1,12 +1,42 @@
 body {
-    background: #090909;
+    background: linear-gradient(rgba(33, 3, 75, 0.8), rgba(33, 3, 75, 0.8)),
+        url('portfolio/galaxia.jpg') center/cover,
+        #000000;
+    color: #ffffff;
+    animation: twinkling-stars 30s linear infinite;
+    filter: brightness(1.2) saturate(1.2);
+
+}
+
+@keyframes twinkling-stars {
+    0% {
+        background-position: 2 0;
+    }
+
+    100% {
+        background-position: 100px 0;
+    }
 }
 
 .bg-black {
-    background: #000;
+    background: linear-gradient(rgba(33, 3, 75, 0.8), rgba(33, 3, 75, 0.8)),
+        url('portfolio/galaxia.jpg') center/cover,
+        #000000;
+    color: #ffffff;
+    animation: twinkling-stars 30s linear infinite;
+    filter: brightness(1.2) saturate(1.2);
+
 }
+
+
 
 .card-project:hover {
     border: 1px solid #fff;
     cursor: pointer;
+}
+
+.mi-div {
+    border-radius: 10px;
+    padding: 20px;
+
 }
